@@ -100,7 +100,7 @@ params:
     enabled: true # Whether to show profile bar
     avatar: https://avatars.githubusercontent.com/u/39407459?v=4
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-    author: y1
+    author: plsy1
     author_title: just for fun
     author_description: Welcome to my blog! Here, I’ll be sharing various thoughts and musings. I’m glad if anything you find here can be of help to you.
     location: Earth
@@ -137,7 +137,6 @@ params:
   # Comment 系统配置
   comment:
     type: gitalk  # 启用 Gitalk 评论系统
-    disqus: y1 # enter disqus shortname here
     gitalk:
       owner: "plsy1"  # GitHub repository 所有者
       admin: ["plsy1"]  # GitHub repository 的所有者和合作者

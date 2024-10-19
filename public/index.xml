@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Fri, 18 Oct 2024 23:39:13 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2024 19:26:10 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>New</title>
+      <link>http://localhost:1313/2024/10/new/</link>
+      <pubDate>Sat, 19 Oct 2024 19:26:10 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2024/10/new/</guid>
+      <description>test</description>
+    </item>
     
     <item>
       <title>About</title>
