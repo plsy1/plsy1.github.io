@@ -3,14 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://plsy1.github.io/about/</loc>
-    <lastmod>2024-10-18T23:39:13+08:00</lastmod>
+    <loc>https://plsy1.github.io/2024/10/new/</loc>
+    <lastmod>2024-10-19T19:26:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://plsy1.github.io/posts/</loc>
+    <lastmod>2024-10-19T19:26:10+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://plsy1.github.io/</loc>
+    <lastmod>2024-10-19T19:26:10+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://plsy1.github.io/about/</loc>
     <lastmod>2024-10-18T23:39:13+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -32,13 +46,6 @@
   
   <url>
     <loc>https://plsy1.github.io/tags/nas/</loc>
-    <lastmod>2024-10-18T22:37:44+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/posts/</loc>
     <lastmod>2024-10-18T22:37:44+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
