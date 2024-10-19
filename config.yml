@@ -100,7 +100,7 @@ params:
     enabled: true # Whether to show profile bar
     avatar: https://avatars.githubusercontent.com/u/39407459?v=4
     gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-    author: plsy1
+    author: y1
     author_title: just for fun
     author_description: Welcome to my blog! Here, I’ll be sharing various thoughts and musings. I’m glad if anything you find here can be of help to you.
     location: Earth
