@@ -497,7 +497,8 @@ NAS-&gt;VPS-&gt;🐧服务器-&gt;微信客户端</p>
         owner: 'plsy1',
         admin: ['[plsy1]'],
         id: md5(location.pathname),
-        distractionFreeMode: true
+        distractionFreeMode: true,
+        proxy: 'https:\/\/cors-anywhere.azm.workers.dev\/https:\/\/github.com\/login\/oauth\/access_token'
     });
     gitalk.render('comments');
 </script>
