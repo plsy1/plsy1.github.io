@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on y1&#39;s blog</title>
+    <link>http://localhost:1313/tags/privacy/</link>
+    <description>Recent content in Privacy on y1&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>CC BY 4.0 CN</copyright>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 18 Oct 2024 23:39:13 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>ここには何もない〜〜</description>
+    </item>
+    
+    <item>
+      <title>Moviepilot &amp; VPS 配置企业微信消息通知</title>
+      <link>http://localhost:1313/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</link>
+      <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</guid>
+      <description>在企业微信应用那边，需要设置“可信ip”或者绑定域名（需要认证），作为个人用户自然是只能绑定ip。那么家宽由于公网肯定不合适：每次重新拨号大</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>http://localhost:1313/2019/03/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2019/03/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>http://localhost:1313/2019/03/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2019/03/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>http://localhost:1313/2019/03/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2019/03/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
+pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>http://localhost:1313/2019/03/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/2019/03/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

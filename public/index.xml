@@ -1,19 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
-    <link>https://plsy1.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 18 Oct 2024 22:37:44 +0800</lastBuildDate>
-    <atom:link href="https://plsy1.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <title>y1&#39;s blog</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on y1&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>CC BY 4.0 CN</copyright>
+    <lastBuildDate>Fri, 18 Oct 2024 23:39:13 +0800</lastBuildDate>
+    
+        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>Hello</title>
-      <link>https://plsy1.github.io/posts/hello/</link>
-      <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
-      <guid>https://plsy1.github.io/posts/hello/</guid>
-      <description>&lt;p&gt;fkyouftgjhfg&lt;/p&gt;</description>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 18 Oct 2024 23:39:13 +0800</pubDate>
+      
+      <guid>http://localhost:1313/about/</guid>
+      <description>ここには何もない〜〜</description>
     </item>
+    
+    <item>
+      <title>Moviepilot &amp; VPS 配置微信消息通知</title>
+      <link>http://localhost:1313/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</link>
+      <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</guid>
+      <description>在企业微信应用那边，需要设置“可信ip”或者绑定域名（需要认证），作为个人用户自然是只能绑定ip。那么家宽由于公网肯定不合适：每次重新拨号大</description>
+    </item>
+    
   </channel>
 </rss>
