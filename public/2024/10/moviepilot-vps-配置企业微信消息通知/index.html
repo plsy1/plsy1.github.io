@@ -41,15 +41,13 @@
     <meta property="article:modified_time" content="2024-10-18T22:37:44+08:00">
     <meta property="article:tag" content="Nas">
     <meta property="article:tag" content="Pt">
-    <meta property="article:tag" content="Frp">
-    <meta property="article:tag" content="Vps">
 
   <meta itemprop="name" content="Moviepilot &amp; VPS 配置微信消息通知">
   <meta itemprop="description" content="使用frp内网穿透，在无公网的情况下接收微信通知">
   <meta itemprop="datePublished" content="2024-10-18T22:37:44+08:00">
   <meta itemprop="dateModified" content="2024-10-18T22:37:44+08:00">
-  <meta itemprop="wordCount" content="528">
-  <meta itemprop="keywords" content="Nas,Pt,Frp,Vps">
+  <meta itemprop="wordCount" content="532">
+  <meta itemprop="keywords" content="Nas,Pt">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Moviepilot &amp; VPS 配置微信消息通知">
   <meta name="twitter:description" content="使用frp内网穿透，在无公网的情况下接收微信通知">
@@ -74,7 +72,7 @@
           <a id="avatar" href="https://github.com/plsy1" target="_blank">
             <img class="img-circle img-rotate" src="https://avatars.githubusercontent.com/u/39407459?v=4" width="200" height="200">
           </a>
-          <h2 id="name" class="hidden-xs hidden-sm">plsy1</h2>
+          <h2 id="name" class="hidden-xs hidden-sm">y1</h2>
           <h3 id="title" class="hidden-xs hidden-sm hidden-md">just for fun</h3>
           <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>Earth</small>
         </div><div class="search" id="search-form-wrap">
@@ -154,19 +152,11 @@
     <div id="tag-cloud-list" class="widget-body">
             
             
-            <a href="http://localhost:1313/tags/frp/" class="tag-list-link" rel="1">frp<span
-               class="tag-list-count">1</span></a>
-            
-            
             <a href="http://localhost:1313/tags/nas/" class="tag-list-link" rel="1">nas<span
                class="tag-list-count">1</span></a>
             
             
             <a href="http://localhost:1313/tags/pt/" class="tag-list-link" rel="1">pt<span
-               class="tag-list-count">1</span></a>
-            
-            
-            <a href="http://localhost:1313/tags/vps/" class="tag-list-link" rel="1">vps<span
                class="tag-list-count">1</span></a>
             
     </div>
@@ -207,19 +197,11 @@ function tagCloud(where, min, max) {
         <ul class="tag-list">
             
             
-            <li class="tag-list-item"><a href="http://localhost:1313/tags/frp/" class="tag-list-link">frp</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
             <li class="tag-list-item"><a href="http://localhost:1313/tags/nas/" class="tag-list-link">nas</a><span
                     class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="http://localhost:1313/tags/pt/" class="tag-list-link">pt</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
-            <li class="tag-list-item"><a href="http://localhost:1313/tags/vps/" class="tag-list-link">vps</a><span
                     class="tag-list-count">1</span></li>
             
         </ul>
@@ -231,16 +213,6 @@ function tagCloud(where, min, max) {
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget-body">
         <ul class="recent-post-list list-unstyled no-thumbnail">
-            <li>
-                <div class="item-inner">
-                    <p class="item-title">
-                        <a href="http://localhost:1313/2024/10/new/" class="title">New</a>
-                    </p>
-                    <p class="item-date">
-                        <time datetime="2024-10-19 19:26:10 &#43;0800 CST" itemprop="datePublished">2024-10-19</time>
-                    </p>
-                </div>
-            </li>
             <li>
                 <div class="item-inner">
                     <p class="item-title">
@@ -293,25 +265,36 @@ function tagCloud(where, min, max) {
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/nas/"> nas </a>
     <a class="article-tag-link" href="/tags/pt/"> pt </a>
-    <a class="article-tag-link" href="/tags/frp/"> frp </a>
-    <a class="article-tag-link" href="/tags/vps/"> vps </a>
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/#comments"
             class="article-comment-link">Comments</a></span>
-		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 528 words</span>
+		<span class="post-wordcount hidden-xs" itemprop="wordCount">Word Count: 532 words</span>
 		<span class="post-readcount hidden-xs" itemprop="timeRequired">Read Time: 2 minutes </span>
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <p>在企业微信应用那边，需要设置“可信ip”或者绑定域名（需要认证），作为个人用户自然是只能绑定ip。那么家宽由于公网肯定不合适：每次重新拨号大概率会分配到一个新的ip，需要重新设置绑定可信ip，为了解决这个问题，可以使用内网穿透工具来实现ip地址固定。比如zerotier、frp。这里以frp为例。</p>
-<p>目的是实现从：</p>
-<p>去程：微信客户端-&gt;🐧服务器-&gt;NAS<br>
-回程：NAS-&gt;🐧服务器-&gt;微信客户端</p>
-<p>变成：</p>
-<p>去程：微信客户端-&gt;🐧服务器-&gt;NAS<br>
-NAS-&gt;VPS-&gt;🐧服务器-&gt;微信客户端</p>
-<h2 id="服务端">服务端</h2>
+      <p>在企业微信的应用配置中，需要设置“可信 IP”或绑定已认证的域名。对于个人用户，通常只能选择绑定 IP 地址。家用宽带要么没有公网，要么公网 IP 是动态分配的，每次重新拨号后可能会获得一个新的 IP，这意味着需要频繁地更新“可信 IP”设置，非常不方便。</p>
+<p>考虑将原来的数据通信路径：</p>
+<ul>
+<li>
+<p><strong>去程</strong>：微信客户端 → 腾讯服务器 → NAS</p>
+</li>
+<li>
+<p><strong>回程</strong>：NAS → 腾讯服务器 → 微信客户端</p>
+</li>
+</ul>
+<p>通过引入 VPS 后，变为以下路径：</p>
+<ul>
+<li>
+<p><strong>去程</strong>：微信客户端 → 腾讯服务器 → NAS（有公网的情况）</p>
+</li>
+<li>
+<p><strong>回程</strong>：NAS → VPS → 腾讯服务器 → 微信客户端</p>
+</li>
+</ul>
+<p>如此一来只需要绑定 VPS 的 IP，这里以 frp 为例进行配置，使用zerotier应该也能实现。</p>
+<h2 id="服务端配置">服务端配置</h2>
 <h3 id="安装frps">安装frps</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>wget https://raw.githubusercontent.com/mvscode/frps-onekey/master/install-frps.sh -O ./install-frps.sh
 </span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">700</span> ./install-frps.sh
@@ -327,19 +310,19 @@ NAS-&gt;VPS-&gt;🐧服务器-&gt;微信客户端</p>
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>--restart<span style="color:#f92672">=</span>always <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-p 81:80 <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>ddsderek/wxchat:latest</span></span></code></pre></div>
-<h2 id="客户端">客户端</h2>
+<h2 id="客户端配置">客户端配置</h2>
 <h3 id="docker-安装-frpc">docker 安装 frpc</h3>
 <h4 id="编辑frpctoml">编辑<code>frpc.toml</code></h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">serverAddr</span> = <span style="color:#e6db74">&#34;&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">serverPort</span> = <span style="color:#ae81ff">5443</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">auth</span>.<span style="color:#a6e22e">method</span> = <span style="color:#e6db74">&#34;token&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">auth</span>.<span style="color:#a6e22e">token</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">##token</span>
-</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">to</span> = <span style="color:#e6db74">&#34;/frp/logs/frpc.log&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">level</span> = <span style="color:#e6db74">&#34;info&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">maxDays</span> = <span style="color:#ae81ff">180</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">disablePrintColor</span> = <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">proxies</span>]]
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;moviepilot&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">type</span> = <span style="color:#e6db74">&#34;http&#34;</span>
@@ -357,11 +340,16 @@ NAS-&gt;VPS-&gt;🐧服务器-&gt;微信客户端</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">network_mode</span>: <span style="color:#ae81ff">host</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">volumes</span>:
 </span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./frpc.toml:/etc/frp/frpc.toml:ro</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">./logs:/frp/logs</span></span></span></code></pre></div>
-<h2 id="moviepilot设置">moviepilot设置</h2>
-<p>新增一条环境变量<code>WECHAT_PROXY: http://qyapi.weixin.qq.com:81</code></p>
-<h2 id="修改host">修改host</h2>
+</span></span><span style="display:flex;"><span>            - <span style="color:#ae81ff">./logs:/frp/logs</span></span></span></code></pre></div>
+<h2 id="其他设置">其他设置</h2>
+<ol>
+<li>
+<p>moviepilot新增一条环境变量<code>WECHAT_PROXY: http://qyapi.weixin.qq.com:81</code></p>
+</li>
+<li>
 <p>修改<code>qyapi.weixin.qq.com</code>的 host为vps的ip</p>
+</li>
+</ol>
 
     </div>
     <div class="article-footer">
@@ -387,7 +375,7 @@ NAS-&gt;VPS-&gt;🐧服务器-&gt;微信客户端</p>
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/plsy1" target="_blank"><span class="text-dark">plsy1</span><small class="ml-1x">just for fun</small></a></h3>
+        <h3 class="media-heading"><a href="https://github.com/plsy1" target="_blank"><span class="text-dark">y1</span><small class="ml-1x">just for fun</small></a></h3>
         <div>Welcome to my blog! Here, I’ll be sharing various thoughts and musings. I’m glad if anything you find here can be of help to you.</div>
       </div>
     </figure>
@@ -502,10 +490,10 @@ NAS-&gt;VPS-&gt;🐧服务器-&gt;微信客户端</p>
 <script type="text/javascript">
     var gitalk = new Gitalk({
         clientID: 'Ov23liKe7nVCEiichMc6',
-        clientSecret: '8e6a8ec812e6c931acb5bd7fab8c6633beb2cf44',
+        clientSecret: '9dab763321ac671345a441dcb46d0c7033b9e5b0',
         repo: 'plsy1.github.io',
         owner: 'plsy1',
-        admin: ['[plsy1]'],
+        admin: ['plsy1'],
         id: md5(location.pathname),
         distractionFreeMode: true,
         proxy: 'https:\/\/cors-anywhere.azm.workers.dev\/https:\/\/github.com\/login\/oauth\/access_token'
