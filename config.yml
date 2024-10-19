@@ -144,6 +144,7 @@ params:
       repo: "plsy1.github.io"  # GitHub repository 名称
       ClientID: "Ov23li7e6ouQKyoRTgR2"  # GitHub Application Client ID
       ClientSecret: "43f1988d7000d4b5bf03b1bb13782406667c609d"  # GitHub Application Client Secret
+      proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
     valine: # Valine. https://valine.js.org
       appid: # your leancloud application appid
       appkey: # your leancloud application appkey
