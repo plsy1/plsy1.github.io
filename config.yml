@@ -142,8 +142,8 @@ params:
       owner: "plsy1"  # GitHub repository 所有者
       admin: ["plsy1","y1"]  # GitHub repository 的所有者和合作者
       repo: "plsy1.github.io"  # GitHub repository 名称
-      ClientID: "Ov23li7e6ouQKyoRTgR2"  # GitHub Application Client ID
-      ClientSecret: "43f1988d7000d4b5bf03b1bb13782406667c609d"  # GitHub Application Client Secret
+      ClientID: "Ov23liBofFdAhtrRQJYE"  # GitHub Application Client ID
+      ClientSecret: "b9d76312e9b8d61c5de5897121db59c0529013b9"  # GitHub Application Client Secret
       proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
     valine: # Valine. https://valine.js.org
       appid: # your leancloud application appid
