@@ -1,9 +1,0 @@
-[submodule "themes/hugo-theme-m10c"]
-	path = themes/hugo-theme-m10c
-	url = https://github.com/vaga/hugo-theme-m10c.git
-[submodule "themes/hugo-pure"]
-	path = themes/hugo-pure
-	url = https://github.com/undus5/hugo-pure
-[submodule "themes/holy"]
-	path = themes/holy
-	url = https://github.com/serkodev/holy.git
