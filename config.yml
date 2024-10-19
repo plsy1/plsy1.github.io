@@ -139,7 +139,7 @@ params:
     type: gitalk  # 启用 Gitalk 评论系统
     gitalk:
       owner: "plsy1"  # GitHub repository 所有者
-      admin: ["plsy1"]  # GitHub repository 的所有者和合作者
+      admin: "plsy1"  # GitHub repository 的所有者和合作者
       repo: "plsy1.github.io"  # GitHub repository 名称
       ClientID: "Ov23liKe7nVCEiichMc6"  # GitHub Application Client ID
       ClientSecret: "9dab763321ac671345a441dcb46d0c7033b9e5b0"  # GitHub Application Client Secret
