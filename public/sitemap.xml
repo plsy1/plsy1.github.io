@@ -3,14 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-10-18T23:39:13+08:00</lastmod>
+    <loc>http://localhost:1313/tags/ffmpeg/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/2025/02/new/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-10-18T23:39:13+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -31,21 +59,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2024-10-18T22:37:44+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/tags/pt/</loc>
-    <lastmod>2024-10-18T22:37:44+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-18T22:37:44+08:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

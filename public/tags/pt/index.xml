@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>从ts文件提取arib字幕</title>
+      <link>http://localhost:1313/2025/02/new/</link>
+      <pubDate>Sun, 16 Feb 2025 18:25:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/2025/02/new/</guid>
+      <description>编译ffmpeg添加libaribcaption libaribcaption cd libaribcaption mkdir build cd build cmake .. -DCMAKE_BUILD_TYPE=Release cmake --build . -j8 cmake --install . ffmpeg git clone https://git.ffmpeg.org/ffmpeg.git cd ffmpeg ./configure --enable-libaribcaption --enable-gpl --enable-nonfree sudo make -j$(nproc) 提取字幕 输出ass字幕： ./ffmpeg -analyzeduration 10MB -probesize</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Fri, 18 Oct 2024 23:39:13 +0800</pubDate>
@@ -27,7 +36,7 @@
       <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
       
       <guid>http://localhost:1313/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</guid>
-      <description>理由 在企业微信的应用配置中，需要设置“可信 IP”或绑定已认证的域名。对于个人用户，通常只能选择绑定 IP 地址。然而家用宽带的公网 IP 往往是动态分配</description>
+      <description>在企业微信的应用配置中，需要设置“可信 IP”或绑定已认证的域名。对于个人用户，通常只能选择绑定 IP 地址。家用宽带要么没有公网，要么公网 IP 是动态</description>
     </item>
     
   </channel>

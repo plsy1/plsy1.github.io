@@ -1,7 +1,6 @@
 +++
 title = 'Moviepilot & VPS 配置微信消息通知'
 date = 2024-10-18T22:37:44+08:00
-description = "使用frp内网穿透，在无公网的情况下接收微信通知"
 tags = ["nas","pt"]
 
 +++
