@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Fri, 18 Oct 2024 22:37:44 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2025 18:25:07 +0800</lastBuildDate>
     
         <atom:link href="https://plsy1.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>从ts文件提取arib字幕</title>
+      <link>https://plsy1.github.io/2025/02/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</link>
+      <pubDate>Sun, 16 Feb 2025 18:25:07 +0800</pubDate>
+      
+      <guid>https://plsy1.github.io/2025/02/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</guid>
+      <description>编译ffmpeg添加libaribcaption libaribcaption cd libaribcaption mkdir build cd build cmake .. -DCMAKE_BUILD_TYPE=Release cmake --build . -j8 cmake --install . ffmpeg git clone https://git.ffmpeg.org/ffmpeg.git cd ffmpeg ./configure --enable-libaribcaption --enable-gpl --enable-nonfree sudo make -j$(nproc) 提取字幕 输出ass字幕： ./ffmpeg -analyzeduration 10MB -probesize</description>
+    </item>
     
     <item>
       <title>About</title>
