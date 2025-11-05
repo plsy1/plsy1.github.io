@@ -1,14 +1,10 @@
 ---
-title: Links
+title: 友链
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
+  - title: y1's blog
+    website: https://plsy1.github.io
+    description: just a blog
+    image: https://plsy1.github.io/img/avatar_hu_f73a28fa8cdd05ed.png
 menu:
     main: 
         weight: -50
@@ -18,20 +14,14 @@ menu:
 comments: false
 ---
 
-To use this feature, add `links` section to frontmatter.
+ヤッホー！ Leave a comment if you’d like to connect!
 
-This page's frontmatter:
 
 ```yaml
 links:
-  - title: GitHub
-    description: GitHub is the world's largest software development platform.
-    website: https://github.com
-    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
-  - title: TypeScript
-    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
-    website: https://www.typescriptlang.org
-    image: ts-logo-128.jpg
-```
+  - title: y1's blog
+    website: https://plsy1.github.io
+    description: just a blog
+    image: https://plsy1.github.io/img/avatar_hu_f73a28fa8cdd05ed.png
 
-`image` field accepts both local and external images.
+```

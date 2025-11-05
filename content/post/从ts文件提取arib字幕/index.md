@@ -2,7 +2,7 @@
 title = '从ts文件提取arib字幕'
 date = 2025-02-16T18:25:07+08:00
 tags = ["ffmpeg"]
-
+categories = ["笔记"]
 +++
 
 ## 编译ffmpeg添加libaribcaption
