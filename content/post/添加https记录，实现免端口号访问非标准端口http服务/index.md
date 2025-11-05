@@ -25,7 +25,7 @@ RFC规定：http 默认端口号 80，https 则是使用默认端口号 443。
 
 这里以 cloudflare 为例说明：
 
-![image-20251105154413227](dns.png)
+![DNS 解析示例](dns.png)
 
 添加一条这样的 https 记录。
 
