@@ -1,80 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://plsy1.github.io/tags/ffmpeg/</loc>
-    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/posts/</loc>
-    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/tags/</loc>
-    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
   <url>
     <loc>https://plsy1.github.io/</loc>
     <lastmod>2025-02-16T18:25:07+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/2025/02/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</loc>
+  </url><url>
+    <loc>https://plsy1.github.io/tags/ffmpeg/</loc>
     <lastmod>2025-02-16T18:25:07+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/about/</loc>
-    <lastmod>2024-10-18T23:39:13+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</loc>
+  </url><url>
+    <loc>https://plsy1.github.io/post/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+  </url><url>
+    <loc>https://plsy1.github.io/tags/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+  </url><url>
+    <loc>https://plsy1.github.io/p/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</loc>
+    <lastmod>2025-02-16T18:25:07+08:00</lastmod>
+  </url><url>
+    <loc>https://plsy1.github.io/p/moviepilot-vps-%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</loc>
     <lastmod>2024-10-18T22:37:44+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://plsy1.github.io/tags/nas/</loc>
     <lastmod>2024-10-18T22:37:44+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://plsy1.github.io/tags/pt/</loc>
     <lastmod>2024-10-18T22:37:44+08:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://plsy1.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://plsy1.github.io/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://plsy1.github.io/categories/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+  </url><url>
+    <loc>https://plsy1.github.io/links/</loc>
+  </url><url>
+    <loc>https://plsy1.github.io/search/</loc>
+  </url><url>
+    <loc>https://plsy1.github.io/categories/test/</loc>
+  </url><url>
+    <loc>https://plsy1.github.io/%E5%85%B3%E4%BA%8E/</loc>
   </url>
-  
-  <url>
-    <loc>https://plsy1.github.io/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
 </urlset>

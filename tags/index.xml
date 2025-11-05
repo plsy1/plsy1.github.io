@@ -1,43 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on y1&#39;s blog</title>
-    <link>https://plsy1.github.io/tags/</link>
-    <description>Recent content in Tags on y1&#39;s blog</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>CC BY 4.0 CN</copyright>
-    <lastBuildDate>Sun, 16 Feb 2025 18:25:07 +0800</lastBuildDate>
-    
-        <atom:link href="https://plsy1.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>从ts文件提取arib字幕</title>
-      <link>https://plsy1.github.io/2025/02/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</link>
-      <pubDate>Sun, 16 Feb 2025 18:25:07 +0800</pubDate>
-      
-      <guid>https://plsy1.github.io/2025/02/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</guid>
-      <description>编译ffmpeg添加libaribcaption libaribcaption cd libaribcaption mkdir build cd build cmake .. -DCMAKE_BUILD_TYPE=Release cmake --build . -j8 cmake --install . ffmpeg git clone https://git.ffmpeg.org/ffmpeg.git cd ffmpeg ./configure --enable-libaribcaption --enable-gpl --enable-nonfree sudo make -j$(nproc) 提取字幕 输出ass字幕： ./ffmpeg -analyzeduration 10MB -probesize</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://plsy1.github.io/about/</link>
-      <pubDate>Fri, 18 Oct 2024 23:39:13 +0800</pubDate>
-      
-      <guid>https://plsy1.github.io/about/</guid>
-      <description>ここには何もない〜〜</description>
-    </item>
-    
-    <item>
-      <title>Moviepilot &amp; VPS 配置微信消息通知</title>
-      <link>https://plsy1.github.io/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</link>
-      <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
-      
-      <guid>https://plsy1.github.io/2024/10/moviepilot-vps-%E9%85%8D%E7%BD%AE%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/</guid>
-      <description>在企业微信的应用配置中，需要设置“可信 IP”或绑定已认证的域名。对于个人用户，通常只能选择绑定 IP 地址。家用宽带要么没有公网，要么公网 IP 是动态</description>
-    </item>
-    
-  </channel>
+    <channel>
+        <title>Tags on y1&#39;s blog</title>
+        <link>https://plsy1.github.io/tags/</link>
+        <description>Recent content in Tags on y1&#39;s blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>y1</copyright>
+        <lastBuildDate>Sun, 16 Feb 2025 18:25:07 +0800</lastBuildDate><atom:link href="https://plsy1.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Ffmpeg</title>
+        <link>https://plsy1.github.io/tags/ffmpeg/</link>
+        <pubDate>Sun, 16 Feb 2025 18:25:07 +0800</pubDate>
+        
+        <guid>https://plsy1.github.io/tags/ffmpeg/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Nas</title>
+        <link>https://plsy1.github.io/tags/nas/</link>
+        <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
+        
+        <guid>https://plsy1.github.io/tags/nas/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pt</title>
+        <link>https://plsy1.github.io/tags/pt/</link>
+        <pubDate>Fri, 18 Oct 2024 22:37:44 +0800</pubDate>
+        
+        <guid>https://plsy1.github.io/tags/pt/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
 </rss>
