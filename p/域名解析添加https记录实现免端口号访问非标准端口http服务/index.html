@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
-    <head>
-	<meta name="generator" content="Hugo 0.152.2"><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="">
-<title>y1&#39;s blog</title>
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="问题由来 RFC规定：http 默认端口号 80，https 则是使用默认端口号 443。\n当浏览器请求一个 url，比如https://exmaple.com，就会去连接默认的443端口。\n">
+<title>域名解析添加https记录，实现免端口号访问非标准端口http服务</title>
 
-<link rel='canonical' href='https://plsy1.github.io/'>
+<link rel='canonical' href='https://plsy1.github.io/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/'>
 
-<link rel="stylesheet" href="/scss/style.min.652f8e20311d202748b8ae2ac07c7a010e0a7200a1a4bbb61fc69b522b979a4e.css"><meta property='og:title' content="y1's blog">
-<meta property='og:description' content="">
-<meta property='og:url' content='https://plsy1.github.io/'>
+<link rel="stylesheet" href="/scss/style.min.652f8e20311d202748b8ae2ac07c7a010e0a7200a1a4bbb61fc69b522b979a4e.css"><meta property='og:title' content="域名解析添加https记录，实现免端口号访问非标准端口http服务">
+<meta property='og:description' content="问题由来 RFC规定：http 默认端口号 80，https 则是使用默认端口号 443。\n当浏览器请求一个 url，比如https://exmaple.com，就会去连接默认的443端口。\n">
+<meta property='og:url' content='https://plsy1.github.io/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/'>
 <meta property='og:site_name' content='y1&#39;s blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-11-04T17:21:02&#43;08:00 '/>
-<meta name="twitter:title" content="y1's blog">
-<meta name="twitter:description" content=""><link rel="alternate" type="application/rss&#43;xml" href="https://plsy1.github.io/index.xml">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='DNS' /><meta property='article:tag' content='domain' /><meta property='article:published_time' content='2025-11-04T17:21:02&#43;08:00'/><meta property='article:modified_time' content='2025-11-04T17:21:02&#43;08:00'/>
+<meta name="twitter:title" content="域名解析添加https记录，实现免端口号访问非标准端口http服务">
+<meta name="twitter:description" content="问题由来 RFC规定：http 默认端口号 80，https 则是使用默认端口号 443。\n当浏览器请求一个 url，比如https://exmaple.com，就会去连接默认的443端口。\n">
     </head>
-    <body class="">
+    <body class="
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -95,7 +96,7 @@
         
         
         
-        <li  class='current' >
+        <li >
             <a href='/' >
                 
                 
@@ -223,69 +224,10 @@
     <aside class="sidebar right-sidebar sticky">
         
             
-                <form action="/search/" class="search-form widget" >
-        <p>
-            <label>搜索</label>
-            <input name="keyword" required placeholder="输入关键词..." />
-        
-            <button title="搜索">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="10" cy="10" r="7" />
-  <line x1="21" y1="21" x2="15" y2="15" />
-</svg>
-
-
-
-            </button>
-        </p>
-    </form>
-            
-        
-            
-                <section class="widget archives">
+                
+    <section class="widget archives">
         <div class="widget-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
-</svg>
-
-
-
-        </div>
-        <h2 class="widget-title section-title">归档</h2>
-
-        
-        
-        
-        
-        
-        <div class="widget-archive--list">
-            <div class="archives-year">
-                    <a href="/archives/#2025">
-                        
-                            <span class="year">2025</span>
-                            <span class="count">2</span>
-                        
-                    </a> 
-                </div>
-            <div class="archives-year">
-                    <a href="/archives/#2024">
-                        
-                            <span class="year">2024</span>
-                            <span class="count">1</span>
-                        
-                    </a> 
-                </div>
-            
-        </div>
-    </section>
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
   <line x1="5" y1="9" x2="19" y2="9" />
   <line x1="5" y1="15" x2="19" y2="15" />
@@ -295,58 +237,18 @@
 
 
 
-    </div>
-    <h2 class="widget-title section-title">分类</h2>
-
-    <div class="tagCloud-tags">
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
         
-            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="font_size_3">
-                笔记
-            </a>
-        
-    </div>
-</section>
-
-            
-        
-            
-                <section class="widget tagCloud">
-    <div class="widget-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
-  <circle cx="9" cy="9" r="2" />
-</svg>
-
-
-
-    </div>
-    <h2 class="widget-title section-title">标签云</h2>
-
-    <div class="tagCloud-tags">
-        
-            <a href="/tags/dns/">
-                DNS
-            </a>
-        
-            <a href="/tags/domain/">
-                Domain
-            </a>
-        
-            <a href="/tags/ffmpeg/">
-                FFmpeg
-            </a>
-        
-            <a href="/tags/nas/">
-                NAS
-            </a>
-        
-            <a href="/tags/pt/">
-                PT
-            </a>
-        
-    </div>
-</section>
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#问题由来">问题由来</a></li>
+    <li><a href="#解决办法">解决办法</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
 
             
         
@@ -354,15 +256,7 @@
 
 
             <main class="main full-width">
-    
-    
-    
-    
-
-    <section class="article-list">
-        
-            
-<article class="">
+    <article class="main-article">
     <header class="article-header">
 
     <div class="article-details">
@@ -429,150 +323,149 @@
 </div>
 
 </header>
-</article>
-        
-            
-<article class="">
-    <header class="article-header">
 
-    <div class="article-details">
+    <section class="article-content">
     
-    <header class="article-category">
-        
-            <a href="/categories/%E7%AC%94%E8%AE%B0/" >
-                笔记
-            </a>
-        
-    </header>
     
+    <h2 id="问题由来">问题由来
+</h2><p>RFC规定：http 默认端口号 80，https 则是使用默认端口号 443。</p>
+<p>当浏览器请求一个 url，比如<code>https://exmaple.com</code>，就会去连接默认的443端口。</p>
+<p>要想通过指定端口连接，需要显示指定，比如<code>https://exmaple.com:8848</code>，这样就会通过指定的8848端口发起连接。</p>
+<p>家庭宽带的80与443端口都被运营商封掉了，所以要开放内网服务供外部访问，需要使用非标准端口。</p>
+<p>访问的时候需要显示指定端口号，这样 url 看起来很丑，当然要觉得无所谓，后面内容就不用看了。</p>
+<h2 id="解决办法">解决办法
+</h2><p>之前解决这个问题可以做302跳转或者套代理中转，我的评价是：治标不治本，还不如不搞。</p>
+<p>现在多了一种办法，就是为域名添加 https 解析。</p>
+<p>这里以 cloudflare 为例说明：</p>
+<p><img src="/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/dns.png"
+	width="2030"
+	height="486"
+	srcset="/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/dns_hu_4871c2bd93173329.png 480w, /p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/dns_hu_b7211b34cda04528.png 1024w"
+	loading="lazy"
+	
+		alt="image-20251105154413227"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="417"
+		data-flex-basis="1002px"
+	
+></p>
+<p>添加一条这样的 https 记录。</p>
+<p>这样，当浏览器访问<code>https://exmaple.com</code>的时候，会根据https记录里的 port 字段来发起连接，这样就不需要显示指定端口。</p>
+<p>不过现在这个时间，还没有成为标准，已知支持的浏览器只有 Safari 与 Firefox。</p>
+<p>Firefox好像得在设置里开启DoH才可以，Safari则不用做设置。</p>
 
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/">从ts文件提取arib字幕</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published" datetime='2025-02-16T18:25:07&#43;08:00'>Feb 16, 2025</time>
-            </div>
-        
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
+</section>
 
 
-
-            <time class="article-time--reading">
-                263 字
-            </time>
-                <time class="article-time--reading">
-                    大约需要 1 分钟
-                </time>
-                
-            </div>
+    <footer class="article-footer">
+    
+    <section class="article-tags">
         
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
+            <a href="/tags/dns/">DNS</a>
         
-            
-<article class="">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/%E7%AC%94%E8%AE%B0/" >
-                笔记
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
-            <a href="/p/moviepilot-vps-%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/">Moviepilot &amp; VPS 配置微信消息通知</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published" datetime='2024-10-18T22:37:44&#43;08:00'>Oct 18, 2024</time>
-            </div>
-        
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-            <time class="article-time--reading">
-                571 字
-            </time>
-                <time class="article-time--reading">
-                    大约需要 2 分钟
-                </time>
-                
-            </div>
-        
-    </footer>
-    
-
-    
-</div>
-
-</header>
-</article>
+            <a href="/tags/domain/">Domain</a>
         
     </section>
-<footer class="site-footer">
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">从ts文件提取arib字幕</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/moviepilot-vps-%E9%85%8D%E7%BD%AE%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Moviepilot &amp; VPS 配置微信消息通知</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <div id="gitalk-container"></div>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.18.0/js/md5.min.js"></script>
+<script>
+    const gitalk = new Gitalk({
+        clientID: "Ov23liKe7nVCEiichMc6",
+        clientSecret: "9dab763321ac671345a441dcb46d0c7033b9e5b0",
+        repo: "plsy1.github.io",
+        owner: "plsy1",
+        admin: ["plsy1"],
+        distractionFreeMode: false, 
+        id: md5(location.pathname), 
+        proxy:"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token",
+    });
+    (function () {
+        const excludedHosts = ["localhost", "127.0.0.1"];
+        const hostname = window.location.hostname;
+
+        if (excludedHosts.includes(hostname)) {
+            document.getElementById("gitalk-container").innerHTML =
+                "Gitalk comments not available by default when the website is previewed locally.";
+            return;
+        }
+        gitalk.render("gitalk-container");
+    })();
+</script>
+
+
+
+    
+
+    <footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -586,6 +479,85 @@
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
 
             </main>
         </div>
