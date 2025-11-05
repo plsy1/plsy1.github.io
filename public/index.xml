@@ -7,7 +7,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>y1</copyright>
-        <lastBuildDate>Sun, 16 Feb 2025 18:25:07 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 04 Nov 2025 17:21:02 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>域名解析添加https记录，实现免端口号访问非标准端口http服务</title>
+        <link>http://localhost:1313/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/</link>
+        <pubDate>Tue, 04 Nov 2025 17:21:02 +0800</pubDate>
+        
+        <guid>http://localhost:1313/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/</guid>
+        <description>&lt;h2 id=&#34;问题由来&#34;&gt;问题由来
+&lt;/h2&gt;&lt;p&gt;RFC规定：http 默认端口号 80，https 则是使用默认端口号 443。&lt;/p&gt;
+&lt;p&gt;当浏览器请求一个 url，比如&lt;code&gt;https://exmaple.com&lt;/code&gt;，就会去连接默认的443端口。&lt;/p&gt;
+&lt;p&gt;要想通过指定端口连接，需要显示指定，比如&lt;code&gt;https://exmaple.com:8848&lt;/code&gt;，这样就会通过指定的8848端口发起连接。&lt;/p&gt;
+&lt;p&gt;家庭宽带的80与443端口都被运营商封掉了，所以要开放内网服务供外部访问，需要使用非标准端口。&lt;/p&gt;
+&lt;p&gt;访问的时候需要显示指定端口号，这样 url 看起来很丑，当然要觉得无所谓，后面内容就不用看了。&lt;/p&gt;
+&lt;h2 id=&#34;解决办法&#34;&gt;解决办法
+&lt;/h2&gt;&lt;p&gt;之前解决这个问题可以做302跳转或者套代理中转，我的评价是：治标不治本，还不如不搞。&lt;/p&gt;
+&lt;p&gt;现在多了一种办法，就是为域名添加 https 解析。&lt;/p&gt;
+&lt;p&gt;这里以 cloudflare 为例说明：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/dns.png&#34;
+	width=&#34;2030&#34;
+	height=&#34;486&#34;
+	srcset=&#34;http://localhost:1313/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/dns_hu_4871c2bd93173329.png 480w, http://localhost:1313/p/%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E6%B7%BB%E5%8A%A0https%E8%AE%B0%E5%BD%95%E5%AE%9E%E7%8E%B0%E5%85%8D%E7%AB%AF%E5%8F%A3%E5%8F%B7%E8%AE%BF%E9%97%AE%E9%9D%9E%E6%A0%87%E5%87%86%E7%AB%AF%E5%8F%A3http%E6%9C%8D%E5%8A%A1/dns_hu_b7211b34cda04528.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20251105154413227&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;417&#34;
+		data-flex-basis=&#34;1002px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;添加一条这样的 https 记录。&lt;/p&gt;
+&lt;p&gt;这样，当浏览器访问&lt;code&gt;https://exmaple.com&lt;/code&gt;的时候，会根据https记录里的 port 字段来发起连接，这样就不需要显示指定端口。&lt;/p&gt;
+&lt;p&gt;不过现在这个时间，还没有成为标准，已知支持的浏览器只有 Safari 与 Firefox。&lt;/p&gt;
+&lt;p&gt;Firefox好像得在设置里开启DoH才可以，Safari则不用做设置。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>从ts文件提取arib字幕</title>
         <link>http://localhost:1313/p/%E4%BB%8Ets%E6%96%87%E4%BB%B6%E6%8F%90%E5%8F%96arib%E5%AD%97%E5%B9%95/</link>
         <pubDate>Sun, 16 Feb 2025 18:25:07 +0800</pubDate>

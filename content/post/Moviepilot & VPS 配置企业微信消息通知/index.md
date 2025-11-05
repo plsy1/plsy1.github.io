@@ -1,7 +1,7 @@
 +++
 title = 'Moviepilot & VPS 配置微信消息通知'
 date = 2024-10-18T22:37:44+08:00
-tags = ["nas","pt"]
+tags = ["NAS","PT"]
 categories = ["笔记"]
 +++
 

@@ -1,7 +1,7 @@
 +++
 title = '从ts文件提取arib字幕'
 date = 2025-02-16T18:25:07+08:00
-tags = ["ffmpeg"]
+tags = ["FFmpeg"]
 categories = ["笔记"]
 +++
 
